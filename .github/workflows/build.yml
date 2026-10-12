@@ -1,0 +1,14 @@
+name: Android APK Build
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check build environment
+        run: |
+          echo "GitHub Actions runner is ready."
+          java -version
+          git --version
